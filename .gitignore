@@ -1,0 +1,12 @@
+# Ignorar todo
+*
+
+# Pero no ignorar estos archivos/directorios específicos
+!Apuntes.txt
+!README.md
+!LICENSE
+!Cap01/
+!Cap01/**
+!.gitignore
+
+

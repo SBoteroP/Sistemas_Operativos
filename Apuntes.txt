@@ -1,0 +1,4 @@
+
+Características de un High Level Language:
+Secuencialidad, Iteración (for), Decisión (if, while)
+
