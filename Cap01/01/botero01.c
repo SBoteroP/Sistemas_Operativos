@@ -16,10 +16,14 @@ Requerimientos:
 #include <string.h>
 #include <time.h>
 
+// Suma dos números enteros (a , b) y luego imprime el resultado
+
 void suma(int a, int b) {
   int result = a + b;
   printf("La suma es: %d \n", result);
 }
+
+// Calcula el área de una circunferencia dado su radio e imprime el resultado.
 
 void areaCircunferencia(double radio) {
   float result = (pow(radio, 2))*3.1416;
