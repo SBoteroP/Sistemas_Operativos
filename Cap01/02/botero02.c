@@ -27,11 +27,10 @@ void print_tipo_datos() {
     float f = 3.14f;
     double d = 3.14159265358979;
     char c = 'A';
-    const char *s = "Hola"; // Cambio a const char *
+    const char *s = "Palabra"; // Cambio a const char *
     void *p = &x;
     long l = 123456789L;
     long long ll = 123456789012345LL;
-    size_t sz = sizeof(int);
 
     // Imprimir enteros con signo
     printf("Entero con signo (%%d): %d\n", x);
@@ -60,8 +59,7 @@ void print_tipo_datos() {
     // Imprimir entero largo largo
     printf("Entero largo largo (%%lld): %lld\n", ll);
 
-    // Imprimir tamaño
-    printf("Tamaño de un entero (%%zu): %zu\n", sz);
+    
 }
 
 /* Función para mostrar la información de punteros */
@@ -86,7 +84,7 @@ int main(int argc, char *argv[]) {
             printf("1. Mostrar ejemplos de tipos de datos\n");
             printf("2. Mostrar información sobre punteros\n");
             printf("3. Salir\n");
-            printf("Ingrese su elección: ");
+            printf("Ingrese su elección: \n");
 
             // Verificar el valor de retorno de scanf
             if (scanf("%d", &choice) != 1) {
