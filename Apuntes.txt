@@ -1,4 +1,55 @@
-
 Características de un High Level Language:
 Secuencialidad, Iteración (for), Decisión (if, while)
+
+Dibujo del procesador
+
+  Localidad Espacial:
+Localidad espacial se refiere a la tendencia de un programa a acceder a datos en ubicaciones de memoria cercanas entre sí. Las cachés L1 y L2 optimizan esto cargando bloques de datos contiguos, anticipando accesos próximos a esos datos.
+
+  Localidad Temporal:
+Localidad temporal indica que los datos accedidos recientemente son propensos a ser reutilizados pronto. Las cachés L1, L2 y L3 almacenan estos datos recientes para que puedan ser accedidos rápidamente sin tener que ir a la memoria principal nuevamente.
+
+
+Arquitectura CPU Replit:
+
++---------------------+          +---------------------+
+|       Núcleo 0      |          |       Núcleo 1      |
+|                     |          |                     |
+|  +-------------+    |          |  +-------------+    |
+|  |   L1d | L1i |    |          |  |   L1d | L1i |    |
+|  +-------------+    |          |  +-------------+    |
+|          |          |          |          |          |
+|  +-------------+    |          |  +-------------+    |
+|  |   L2 Caché  |    |          |  |   L2 Caché  |    |
+|  +-------------+    |          |  +-------------+    |
+|                     |          |                     |
++---------------------+          +---------------------+
+           |                                |
++------------------------------------------------------+
+|                       L3 Caché                       |
+|                                                      |
++------------------------------------------------------+
+
+
+Arquitectura CPU CoCalc:
+
++---------------------+          +---------------------+
+|       Núcleo 0      |          |       Núcleo 1      |
+|                     |          |                     |
+|  +-------------+    |          |  +-------------+    |
+|  |   L1d | L1i |    |          |  |   L1d | L1i |    |
+|  +-------------+    |          |  +-------------+    |
+|                     |          |                     |
+|  +-------------+    |          |  +-------------+    |
+|  |   L2 Caché  |    |          |  |   L2 Caché  |    |
+|  +-------------+    |          |  +-------------+    |
+|                     |          |                     |
++---------------------+          +---------------------+
+           |                                |
+           |                                |
++---------------------+          +---------------------+
+|       L3 Caché      |          |       L3 Caché      |
+|                     |          |                     |
++---------------------+          +---------------------+
+
 

@@ -1,10 +1,10 @@
-/* **************************************************
+/* ******************************************************
 Autor: Santiago Botero Pacheco
 Materia: Sistemas Operativos
 Fecha: 30/07/2024
-*****************************************************
-Programación en C | Taller edad
-************************************************** */
+*********************************************************
+Programación en C | Taller Tipos de Datos y Apuntadores
+****************************************************** */
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -31,6 +31,7 @@ void print_tipo_datos() {
     void *p = &x;
     long l = 123456789L;
     long long ll = 123456789012345LL;
+    size_t sz = sizeof(int);
 
     // Imprimir enteros con signo
     printf("Entero con signo (%%d): %d\n", x);
@@ -59,7 +60,9 @@ void print_tipo_datos() {
     // Imprimir entero largo largo
     printf("Entero largo largo (%%lld): %lld\n", ll);
 
-    
+    // Imprimir tamaño de un tipo de dato
+    printf("Tamaño de un tipo de dato (%%zu): %zu\n", sz);
+
 }
 
 /* Función para mostrar la información de punteros */
