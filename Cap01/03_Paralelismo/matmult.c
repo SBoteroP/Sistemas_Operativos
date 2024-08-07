@@ -8,6 +8,7 @@ Programación en C | Evaluación Rendimiento de Sistemas de Computo
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include <time.h>
 
 #define DATA_RESERVA (1024 * 1024 * 64 * 3)
@@ -66,20 +67,34 @@ int main(int argc, char *argv[]) {
   B = A + N * N;
   C = B + N * N;
 
-  if (argc < 3) {
-    printf("./MatMult MatrizSize NumHilos . . . .\n \n");
+  if (strcmp(argv[3], "time") == 0) {
+    clock_t inicio;
+    inicio = clock();
+
+    Init_Matriz(N, A, B, C);
+    Mult_Matriz(N, A, B, C);
+
+    clock_t fin;
+    fin = clock();
+
+    double time_spent = (double)(fin - inicio) / CLOCKS_PER_SEC;
+    printf("El tiempo de ejecución fué de  %f  segundos", time_spent);
   }
 
-  printf("Valores ingresados: \n");
-  printf("Matriz size (NxN): %d x %d \n", N, N);
-  printf("Numero de hilos (h): %d \n", h);
+  else if (argc != 3) {
+    printf("./MatMult MatrizSize NumHilos . . . .\n \n");
+  } else {
+    printf("Valores ingresados: \n");
+    printf("Matriz size (NxN): %d x %d \n", N, N);
+    printf("Numero de hilos (h): %d \n", h);
 
-  Init_Matriz(N, A, B, C);
+    Init_Matriz(N, A, B, C);
 
-  Print_Matriz(N, A);
-  Print_Matriz(N, B);
-  Mult_Matriz(N, A, B, C);
-  Print_Matriz(N, C);
+    Print_Matriz(N, A);
+    Print_Matriz(N, B);
+    Mult_Matriz(N, A, B, C);
+    Print_Matriz(N, C);
+  }
 
   return 0;
 }
