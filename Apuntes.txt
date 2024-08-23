@@ -1,7 +1,9 @@
+¿Qué es un Sistema Operativo?:
+El sistema operativo es un software que actúa como intermediario entre el hardware de una computadora y los programas que se ejecutan en ella. 
+Es esencial para el funcionamiento de la computadora, ya que permite que los programas interactúen con el hardware de forma eficiente y segura.
+
 Características de un High Level Language:
 Secuencialidad, Iteración (for), Decisión (if, while)
-
-Dibujo del procesador
 
   Localidad Espacial:
 Localidad espacial se refiere a la tendencia de un programa a acceder a datos en ubicaciones de memoria cercanas entre sí. Las cachés L1 y L2 optimizan esto cargando bloques de datos contiguos, anticipando accesos próximos a esos datos.
