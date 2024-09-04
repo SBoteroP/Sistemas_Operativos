@@ -19,10 +19,9 @@ Implementa y prueba programas que operan de manera concurrente, maximizando el u
 ### Pruebas de Rendimiento
 Utiliza herramientas y métricas para evaluar el rendimiento de los programas concurrentes. Se exploran métodos para medir la eficiencia, latencia, y uso de recursos, así como técnicas para optimizar el código y mejorar el desempeño general.
 
-## Objetivo
-
-El objetivo de este repositorio es servir como un recurso centralizado para el estudio y práctica de sistemas operativos, proporcionando un entorno donde se puedan aplicar conceptos teóricos a través de proyectos prácticos. A lo largo del curso, los estudiantes desarrollarán las habilidades necesarias para crear aplicaciones concurrentes que aprovechen eficientemente los recursos computacionales.
-
----
-
-¡Explora los diferentes proyectos y contribuye a la evolución de este repositorio! Cada carpeta contiene ejemplos y ejercicios diseñados para fortalecer tus habilidades en la creación y manejo de sistemas operativos eficientes y concurrentes.
+# Autor
+<table>
+  <tr>
+<td align="center"><a href="https://github.com/SBoteroP"><img src="https://avatars.githubusercontent.com/u/68749776?s=400&u=985d505e9c62f2f7fa7d08a46e406a451995b5a4&v=4" width="100px;" alt=""/><br /><sub><b>Santiago Botero</b></sub></a><br /></td>
+  </tr>
+</table>
