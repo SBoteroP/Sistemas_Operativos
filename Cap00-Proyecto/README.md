@@ -40,7 +40,7 @@ Este proyecto implementa un patrón Publicador/Suscriptor para un Sistema de Dis
 
 ## Instrucciones de Compilación
 
-Utiliza el Makefile proporcionado para compilar el proyecto: '_make all_'
+Utiliza el Makefile proporcionado para compilar el proyecto: _'make all'_
 
 ## Ejecución del Sistema
 
