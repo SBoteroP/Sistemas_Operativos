@@ -64,3 +64,27 @@ Jerarquía de la memoria:
 |  -<---------<---------<---------<---------<--------- |
 |                     Capacidad                        |
 +------------------------------------------------------+
+
+>>>>> PROCESOS <<<<<
+
+-Round Robin- 
+
+Ventajas RR :
+● Dado que la CPU sirve a cada proceso durante un quantum
+de tiempo fijo, a todos los procesos se les asigna la misma
+prioridad.
+
+● Como cada ciclo round-robin da a cada proceso un tiempo
+predeterminado para ejecutarse, no se produce inanición.
+No se pasa por alto ningún proceso.
+
+Desventajas RR :
+● La elección de la longitud del
+Quantum Time tiene un impacto considerable en el rendimiento en RR. Si el
+quantum de tiempo es mayor de lo necesario, se comporta
+de forma similar a FCFS.
+
+● Si el quantum de tiempo es menor de lo necesario,
+aumenta el número de veces que la CPU cambia de un
+proceso a otro. Como resultado, afecta la eficiencia de la
+CPU.
