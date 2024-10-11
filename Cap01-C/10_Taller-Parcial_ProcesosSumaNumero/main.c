@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
 {
     if (argc != 5)
     {
-        printf("Uso: %s N1 archivo00 N2 archivo01\n", argv[0]);
+        printf("Uso: %s N1 text1 N2 text2\n", argv[0]);
         return 1;
     }
 
@@ -75,7 +75,7 @@ int main(int argc, char *argv[])
     {
         close(fd2[0]);
         int sumaB = sum_array(arr2, N2);
-        printf("SegundoHijo: [%d] Sum_File2 = %d\n", getpid(), sumaB);
+        printf("SegundoHijo: [%d] Sum_text2 = %d\n", getpid(), sumaB);
         write(fd2[1], &sumaB, sizeof(int));
         close(fd2[1]);
         exit(0);
@@ -90,7 +90,7 @@ int main(int argc, char *argv[])
     if (pid3 == 0)
     {
         int sumaA = sum_array(arr1, N1);
-        printf("GranHijo: [%d] Sum_File1 = %d\n", getpid(), sumaA);
+        printf("GranHijo: [%d] Sum_text1 = %d\n", getpid(), sumaA);
         exit(0);
     }
     else if (pid3 == -1)
