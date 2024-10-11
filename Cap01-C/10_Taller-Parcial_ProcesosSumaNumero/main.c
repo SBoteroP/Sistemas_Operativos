@@ -1,3 +1,29 @@
+/* ****************************************************************
+    Autor: Santiago Botero Pacheco
+    Materia: Sistemas Operativos
+    Fecha: 02/10/2024
+*******************************************************************
+    Este programa simula un proceso padre que crea tres hijos, donde 
+    cada hijo tiene una tarea asignada relacionada con la suma de 
+    arreglos numéricos leídos desde archivos. Los hijos realizan 
+    las sumas parciales, las envían de vuelta al proceso padre a través 
+    de pipes, y el padre se encarga de imprimir la suma total y otros 
+    resultados parciales. La estructura general es un ejemplo clásico 
+    de comunicación entre procesos utilizando pipes y fork() en un 
+    sistema operativo basado en UNIX.
+    
+    Detalles del programa:
+    1. Lee dos arreglos de archivos de texto proporcionados como 
+       argumentos.
+    2. Un proceso hijo calcula la suma total de ambos arreglos y se la 
+       pasa al proceso padre.
+    3. Otro hijo calcula la suma del segundo arreglo y se la pasa al 
+       padre.
+    4. Un tercer proceso hijo calcula la suma del primer arreglo.
+    5. El proceso padre espera a que terminen los hijos y muestra 
+       los resultados.
+***************************************************************** */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
